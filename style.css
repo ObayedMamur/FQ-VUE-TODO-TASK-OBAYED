@@ -1,0 +1,7 @@
+.doneTodo {
+    text-decoration: line-through;
+}
+
+i {
+    cursor: pointer;
+}
