@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .doneTodo {
-    text-decoration: line-through;
+  text-decoration: line-through red;
 }
 
 i {
-    cursor: pointer;
+  cursor: pointer;
+}
+li {
+    font-size: 1.4em;
+}
+.fa-check {
+  color: rgb(82, 156, 8);!important
+}
+.fa-minus-circle {
+  color: red;!important
 }

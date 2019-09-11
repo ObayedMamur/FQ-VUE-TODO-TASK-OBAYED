@@ -20,12 +20,15 @@
 <body>
     <div class="container" id="app">
         <h1 class="text-center mt-5 mb-5">What TO DO?</h1>
+        <p class="text-center mb-5">It's a simple SPA made with VueJs<br>Click on the input field below and add what you
+            need To Do</p>
 
         <div class="input-group input-group-lg mb-3">
-            <input type="text" class="form-control" placeholder="Add What TO DO" v-model="newTodoName" v-on:keyup.enter="addTodo">
+            <input type="text" class="form-control" placeholder="Add What TO DO" v-model="newTodoName"
+                v-on:keyup.enter="addTodo">
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2" v-on:click="addTodo">
-                    ADD TODO
+                    Add ToDo
                 </button>
             </div>
         </div>
@@ -34,11 +37,11 @@
             <li class="list-group-item" v-for="(todo, index) in todos">
                 <span v-bind:class="{doneTodo: todo.isDone}">{{ todo.name }}</span>
                 <div class="float-right">
-                    <i class="fas fa-check" v-bind:class="{'fa-check': !todo.isDone, 'fa-redo': todo.isDone}" v-on:click="toggleDone(index)"></i>
+                    <i class="fas fa-check" v-bind:class="{'fa-check': !todo.isDone, 'fa-redo': todo.isDone}"
+                        v-on:click="toggleDone(index)"></i>
                     <i class="fas fa-minus-circle ml-3" v-on:click="delTodo(index)"></i>
                 </div>
             </li>
-
         </ul>
 
 
